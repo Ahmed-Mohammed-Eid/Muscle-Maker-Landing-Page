@@ -1,7 +1,8 @@
 /* SAUCE TOMATO FONT OTF */
 @font-face {
     font-family: "Sauce Tomato";
-    src: url("./assets/fonts/SauceTomato.otf") format("opentype");
+    src: url(./assets/fonts/SauceTomato.woff2) format("woff2"),
+        url(./assets/fonts/SauceTomato.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +11,8 @@
 /* Mochiy POP one ttf */
 @font-face {
     font-family: "Mochiy Pop One";
-    src: url("./assets/fonts/MochiyPopPOne-Regular.ttf") format("truetype");
+    src: url(./assets/fonts/MochiyPopPOne-Regular.woff2) format("woff2"),
+        url(.//assets/fonts/MochiyPopPOne-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -68,7 +70,6 @@ body {
     display: block;
     margin-bottom: 20px;
 }
-
 
 .left h1 {
     font-family: var(--main-font);
@@ -240,7 +241,7 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-        margin-bottom: 20PX;
+        margin-bottom: 20px;
     }
     .images_container_mobile img {
         width: 100%;
@@ -260,7 +261,7 @@ body {
     .images_container_mobile .image3 {
         grid-column: 3 / 4;
     }
-    
+
     .buttons,
     .qrs {
         justify-content: center;
@@ -268,7 +269,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-
     .left h1 {
         font-size: 1.8rem;
     }
